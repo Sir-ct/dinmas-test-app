@@ -17,7 +17,7 @@ SocketInstance(server);
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get("/", (req, res)=>{
-	res.send("/index.html")
+	res.sendFile("/index.html")
 })
 
 
